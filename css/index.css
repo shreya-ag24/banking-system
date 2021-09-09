@@ -1,0 +1,58 @@
+h1{
+    background-color: white;
+    text-shadow: whitesmoke;
+    color:  rgb(168, 165, 165);
+}
+h2{
+    background-color: white;
+    text-shadow: whitesmoke;
+    color:  rgb(168, 165, 165);
+    font-family:serif; 
+    font-weight:bolder;
+}
+.text{
+    font-size: calc(2.375rem + 1.5vw);
+    padding-top: 0.5rem!important;
+    text-align: center;
+    margin-top: 105px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+    padding-top: 40px;
+  }
+  
+  .column ,h2{
+    flex: 30%;
+    padding-top: 8px;
+    text-align: center;
+  }
+
+   #a{
+      margin-left: 80px;
+  } 
+   #c{
+      margin-right: 20px;
+  } 
+  #b{
+      margin-top: 20px;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
